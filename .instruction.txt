@@ -1,0 +1,3 @@
+1. Скоировать .env.example файл в .env
+2. Установить зависимости "composer install"
+3. Запуск "php artisan serve"
