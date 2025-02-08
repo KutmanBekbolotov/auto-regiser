@@ -24,15 +24,15 @@
         @csrf
         <div class="mb-4">
             <label for="unique_number" class="block text-gray-700 font-medium">Номер автомобиля (AUTO-XXXXXX)</label>
-            <input type="text" id="unique_number" name="unique_number" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+            <input type="text" id="unique_number" name="unique_number" value="{{ old('unique_number') }}" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
         </div>
         <div class="mb-4">
             <label for="owner_full_name" class="block text-gray-700 font-medium">ФИО текущего владельца</label>
-            <input type="text" id="owner_full_name" name="owner_full_name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+            <input type="text" id="owner_full_name" name="owner_full_name" value="{{ old('owner_full_name') }}" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
         </div>
         <div class="mb-6">
             <label for="new_owner_full_name" class="block text-gray-700 font-medium">ФИО нового владельца</label>
-            <input type="text" id="new_owner_full_name" name="new_owner_full_name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+            <input type="text" id="new_owner_full_name" name="new_owner_full_name" value="{{ old('new_owner_full_name') }}" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
         </div>
         <button type="submit" class="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 transition">Перерегистрировать</button>
     </form>
